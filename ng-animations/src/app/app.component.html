@@ -1,0 +1,20 @@
+<div
+  [@clickedState]="clickInfo"
+  (click)="onClick()"
+  (mousedown)="clickInfo = 'mousedown'"></div>
+
+<p [@clickedState]="paragraphClicked" (click)="paragraphClicked = 'clicked'">Some text</p>
+<hr>
+
+<input type="number" (input)="numberEntred = $event.target.value">
+<br><br>
+<span [@enteredState]="numberEntred == 1 ? 'selected' : 'unselected'">1</span>
+<span [@enteredState]="numberEntred == 2 ? 'selected' : 'unselected'">2</span>
+<span [@enteredState]="numberEntred == 3 ? 'selected' : 'unselected'">3</span>
+<span [@enteredState]="numberEntred == 4 ? 'selected' : 'unselected'">4</span>
+<span [@enteredState]="numberEntred == 5 ? 'selected' : 'unselected'">5</span>
+<span [@enteredState]="numberEntred == 6 ? 'selected' : 'unselected'">6</span>
+<span [@enteredState]="numberEntred == 7 ? 'selected' : 'unselected'">7</span>
+<span [@enteredState]="numberEntred == 8 ? 'selected' : 'unselected'">8</span>
+<span [@enteredState]="numberEntred == 9 ? 'selected' : 'unselected'">9</span>
+<span [@enteredState]="numberEntred == 0 ? 'selected' : 'unselected'">0</span>
